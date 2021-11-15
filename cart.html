@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Redstore - Giỏ Hàng </title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="index.html"><img src="images/RedStore.PNG" width="75px"></a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">Trang Chủ</a></li>
+						<li><a href="products.html">Sản Phẩm</a></li>
+						<li><a href="">Giới Thiệu</a></li>
+						<li><a href="">Liên Hệ</a></li>
+						<li><a href="account.html">Tài Khoản</a></li>
+					</ul>
+				</nav>
+				<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+			
+		</div>
+
+<!------------ cart items details ----------->
+<div class="small-container cart-page">
+	<table>
+		<tr>
+			<th>Sản Phẩm</th>
+			<th>Số Lượng</th>
+			<th>Tổng Giá</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/buy-1.jpg">
+					<div>
+						<p>Áo thun nam PUMA màu đỏ</p>
+						<small> Giá: $50.00</small>
+						<br>
+						<a href="">Xóa khỏi giỏ hàng</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>$50.00</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/buy-2.jpg">
+					<div>
+						<p>Giày thể thao nam HRX</p>
+						<small> Giá: $60.00</small>
+						<br>
+						<a href="">Xóa khỏi giỏ hàng</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>$60.00</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/buy-3.jpg">
+					<div>
+						<p>Quần Jogger nam thun xám</p>
+						<small> Giá: $21.71</small>
+						<br>
+						<a href="">Xóa khỏi giỏ hàng</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>$21.71</td>
+		</tr>
+	</table>
+	<div class="total-price">
+		<table>
+			<tr>
+				<td>Tổng</td>
+				<td>$131.71</td>
+			</tr>
+			<tr>
+				<td>Thuế</td>
+				<td>$35.00</td>
+			</tr>
+			<tr>
+				<td>Toàn bộ(+Thuế)</td>
+				<td>$166.71</td>
+			</tr>
+		</table>
+	</div>
+</div>
+	
+			
+ <!---------- footer --------->
+ 		<div class="footer">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="footer-col-1">
+	 				<h3>Tải xuống ứng dụng của chúng tôi</h3>
+	 				<p>Tải xuống ứng dụng cho điện thoại di động Android và iOS.</p>
+	 				<div class="app-logo">
+	 					<img src="images/play-store.png" >
+	 					<img src="images/app-store.png" >
+	 				</div>
+ 				</div>
+	 			<div class="footer-col-2">
+	 				<img src="images/RedStore.PNG" >
+	 				<p>Mục đích của chúng tôi là Làm cho Nhiều người có thể tiếp cận được niềm vui và lợi ích của thể thao một cách bền vững.</p>
+	 			</div>
+	 			<div class="footer-col-3">
+	 				<h3>Liên kết hữu ích</h3>
+	 				<ul>
+	 					<li>Phiếu giảm giá</li>
+	 					<li>Bài viết trên blog</li>
+	 					<li>Chính sách hoàn trả</li>
+	 					<li>Tham gia liên kết</li>
+	 				</ul>
+	 			</div>
+	 			<div class="footer-col-4">
+	 				<h3>Theo dõi chúng tôi</h3>
+	 				<ul>
+	 					<li>Facebook</li>
+	 					<li>Twitter</li>
+	 					<li>Instagram</li>
+	 					<li>YouTube</li>
+	 				</ul>
+	 			</div>
+ 			</div>
+ 			<hr> 
+ 			<p class="copyright">Copyright 2021 by our group</p>
+ 		</div>
+ 	</div>
+ <!----------- js for toggle menu----------------->
+ 	<script>
+ 		var MenuItems= document.getElementById("MenuItems");
+ 		MenuItems.style.maxHeight = "0px";
+ 		function menutoggle(){
+ 			if(MenuItems.style.maxHeight == "0px")
+ 			{
+ 				MenuItems.style.maxHeight = "200px"
+ 			}
+ 			else 
+ 			{
+ 				MenuItems.style.maxHeight = "0px"
+ 			}
+ 		}
+ 	</script>
+
+</body>
+</html>
